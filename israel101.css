@@ -1,0 +1,182 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem 0 0;
+    background-color: white;
+    color: #000;
+    font-family: Oswald;
+}
+
+.shop {
+    color: blue;
+}
+
+h1 {
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Wel {
+    position: relative;
+    margin: 0 2.6rem;
+}
+
+.Wel::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 75px;
+    height: 2px;
+    background-color: #000;
+    margin-left: .25rem;
+}
+
+.main {
+    padding: 2rem 0;
+}
+
+.main2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+article:nth-child(1) {
+    background-color: cadetblue;
+}
+
+article:nth-child(2) {
+    background-color: fuchsia;
+}
+
+article:nth-child(3) {
+    background-color: green;
+}
+
+article:nth-child(4) {
+    background-color: gold;
+}
+
+.card-img {
+    width: 200px;
+    height: auto;
+    padding: 3rem 0;
+    transition: .5s;
+}
+
+.cardname {
+    position: absolute;
+    left: -25%;
+    top: 0;
+    width: 3.5rem;
+    height: 100%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    background-color: #000;
+    color: gold;
+    font-weight: bold;
+    transition: .5s;
+
+}
+
+.card_icon {
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+.card_icon:hover {
+    color: darkgoldenrod;
+}
+
+.card_precis {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: .5s;
+
+}
+
+.card_preci {
+    display: block;
+    text-align: center;
+    color: black;
+
+}
+
+.card_preci-before {
+    font-size: small;
+    text-decoration: line-through;
+    color: red;
+    margin-bottom: 3px;
+
+}
+
+.card_preci-now {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.card:hover {
+    box-shadow: 0 .5rem 1rem yellow;
+
+}
+
+.card:hover .cardname {
+    left: 0;
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+    margin-left: 3.5rem;
+}
+
+.card:hover .card_precis {
+    margin-left: 3.5rem;
+    padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 564px)
+(max-width: 768px)
+ {
+    body {
+        margin: 0 5rem;
+    }
+
+    .Wel {
+        margin: 0 5rem;
+    }
+
+    .main2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
